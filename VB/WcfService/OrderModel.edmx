@@ -32,7 +32,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NorthwindModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-        <EntityContainer Name="NorthwindEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="NorthwindEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Orders" EntityType="NorthwindModel.Order" />
         </EntityContainer>
         <EntityType Name="Order">
@@ -59,7 +59,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NorthwindModelStoreContainer" CdmEntityContainer="NorthwindEntities2">
+        <EntityContainerMapping StorageEntityContainer="NorthwindModelStoreContainer" CdmEntityContainer="NorthwindEntities1">
           <EntitySetMapping Name="Orders">
             <EntityTypeMapping TypeName="NorthwindModel.Order">
               <MappingFragment StoreEntitySet="Orders">
