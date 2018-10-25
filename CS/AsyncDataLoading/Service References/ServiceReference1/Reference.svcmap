@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c07fcfa9-63a5-46b9-9781-f08513e8c779" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57674/OrderService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OrderService.xsd" MetadataType="Schema" ID="06f4acbc-ceec-4c9d-bbde-dee6366b2f5f" SourceId="1" SourceUrl="http://localhost:57674/OrderService.svc?xsd=xsd0" />
+    <MetadataFile FileName="OrderService.disco" MetadataType="Disco" ID="f33208bc-7cd1-4df2-9413-c1e2dc0af399" SourceId="1" SourceUrl="http://localhost:57674/OrderService.svc?disco" />
+    <MetadataFile FileName="OrderService1.xsd" MetadataType="Schema" ID="e7e7ebdd-dbfe-453f-a274-4508846e14c8" SourceId="1" SourceUrl="http://localhost:57674/OrderService.svc?xsd=xsd1" />
+    <MetadataFile FileName="OrderService.wsdl" MetadataType="Wsdl" ID="e9556b8a-93c1-4223-ad31-c2fb025f9eba" SourceId="1" SourceUrl="http://localhost:57674/OrderService.svc?wsdl" />
+    <MetadataFile FileName="OrderService2.xsd" MetadataType="Schema" ID="01d3c25f-6d40-4a47-8f83-ce0922265d42" SourceId="1" SourceUrl="http://localhost:57674/OrderService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

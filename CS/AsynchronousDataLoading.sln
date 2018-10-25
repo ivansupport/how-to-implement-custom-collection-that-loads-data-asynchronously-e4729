@@ -1,0 +1,96 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDataLoading", "AsyncDataLoading\AsyncDataLoading.csproj", "{654A52F6-5D8C-4B61-9125-CB6D63422A9A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD} = {B4C3152A-26A6-442A-B4C5-1BC64E8157AD}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug.SL|Any CPU = Debug.SL|Any CPU
+		Debug.SL|Mixed Platforms = Debug.SL|Mixed Platforms
+		Debug.SL|x86 = Debug.SL|x86
+		Debug.WPF|Any CPU = Debug.WPF|Any CPU
+		Debug.WPF|Mixed Platforms = Debug.WPF|Mixed Platforms
+		Debug.WPF|x86 = Debug.WPF|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release.SL|Any CPU = Release.SL|Any CPU
+		Release.SL|Mixed Platforms = Release.SL|Mixed Platforms
+		Release.SL|x86 = Release.SL|x86
+		Release.WPF|Any CPU = Release.WPF|Any CPU
+		Release.WPF|Mixed Platforms = Release.WPF|Mixed Platforms
+		Release.WPF|x86 = Release.WPF|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.SL|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.SL|Any CPU.Build.0 = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.SL|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.SL|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.SL|x86.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.WPF|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.WPF|Any CPU.Build.0 = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.WPF|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.WPF|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug.WPF|x86.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.SL|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.SL|Any CPU.Build.0 = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.SL|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.SL|Mixed Platforms.Build.0 = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.SL|x86.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.WPF|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.WPF|Any CPU.Build.0 = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.WPF|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.WPF|Mixed Platforms.Build.0 = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release.WPF|x86.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B4C3152A-26A6-442A-B4C5-1BC64E8157AD}.Release|x86.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.SL|Any CPU.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.SL|Any CPU.Build.0 = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.SL|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.SL|Mixed Platforms.Build.0 = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.SL|x86.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.WPF|Any CPU.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.WPF|Any CPU.Build.0 = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.WPF|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.WPF|Mixed Platforms.Build.0 = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug.WPF|x86.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.SL|Any CPU.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.SL|Any CPU.Build.0 = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.SL|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.SL|Mixed Platforms.Build.0 = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.SL|x86.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.WPF|Any CPU.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.WPF|Any CPU.Build.0 = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.WPF|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.WPF|Mixed Platforms.Build.0 = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release.WPF|x86.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{654A52F6-5D8C-4B61-9125-CB6D63422A9A}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
