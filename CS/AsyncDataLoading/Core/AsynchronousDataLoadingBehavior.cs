@@ -1,12 +1,10 @@
 ﻿using System.Windows;
 using System;
 using System.Windows.Data;
-using DevExpress.Xpf.Core.Native;
-using System.Windows.Controls;
-using StdGrid = System.Windows.Controls.Grid;
-using DevExpress.Xpf.Core;
-using DevExpress.Xpf.Mvvm.UI.Interactivity;
 using DevExpress.Xpf.Grid;
+using DevExpress.Mvvm.UI.Interactivity;
+using DevExpress.Utils;
+
 namespace AsyncDataLoading {
     public class AsynchronousDataLoadingBehavior : Behavior<GridControl> {
         #region DP
@@ -30,7 +28,7 @@ namespace AsyncDataLoading {
             DependencyProperty.Register("AllowColumnFiltering", typeof(bool), typeof(AsynchronousDataLoadingBehavior),
             new PropertyMetadata(true, (d, e) => ((AsynchronousDataLoadingBehavior)d).OnAllowColumnFilteringChanged()));
         public static readonly DependencyProperty AllowFilterEditorProperty =
-            DependencyProperty.Register("AllowFilterEditor", typeof(bool), typeof(AsynchronousDataLoadingBehavior),
+            DependencyProperty.Register("AllowFilterEditor", typeof(DefaultBoolean), typeof(AsynchronousDataLoadingBehavior),
             new PropertyMetadata(true, (d, e) => ((AsynchronousDataLoadingBehavior)d).OnAllowFilterEditorChanged()));
         public static readonly DependencyProperty ShowTotalSummaryProperty =
             DependencyProperty.Register("ShowTotalSummary", typeof(bool), typeof(AsynchronousDataLoadingBehavior),
@@ -111,8 +109,8 @@ namespace AsyncDataLoading {
             get { return (bool)GetValue(AllowColumnFilteringProperty); }
             set { SetValue(AllowColumnFilteringProperty, value); }
         }
-        public bool AllowFilterEditor {
-            get { return (bool)GetValue(AllowFilterEditorProperty); }
+        public DefaultBoolean AllowFilterEditor {
+            get { return (DefaultBoolean)GetValue(AllowFilterEditorProperty); }
             set { SetValue(AllowFilterEditorProperty, value); }
         }
         public bool ShowTotalSummary {
@@ -127,7 +125,7 @@ namespace AsyncDataLoading {
         public DataViewBase GridView { get { return Grid != null ? Grid.View : null; } }
         public GridControl Grid { get { return AssociatedObject; } }
 
-        bool IsAttached = false;
+        bool _IsAttached = false;
         bool IsGridEnabled = true;
         bool IsFirstAttaching = true;
         
@@ -187,8 +185,8 @@ namespace AsyncDataLoading {
         }
         void TryAttach() {
             if(DataSourceManager == null || Grid == null || GridView == null) return;
-            if(IsAttached) return;
-            IsAttached = true;
+            if(_IsAttached) return;
+            _IsAttached = true;
             BindingOperations.SetBinding(Grid, GridControl.ItemsSourceProperty, new Binding("DataSource") { Source = DataSourceManager });
             DataSourceManager.LoadingCompleted += OnLoadingCompleted;
             DataSourceManager.DataSourceInitialized += OnDataSourceManagerDataSourceInitialized;
@@ -198,8 +196,8 @@ namespace AsyncDataLoading {
         }
         void TryDetach() {
             if(DataSourceManager == null || Grid == null || GridView == null) return;
-            if(!IsAttached) return;
-            IsAttached = false;
+            if(!_IsAttached) return;
+            _IsAttached = false;
             Grid.ClearValue(GridControl.ItemsSourceProperty);
             EnableGrid();
             DataSourceManager.LoadingCompleted -= OnLoadingCompleted;
@@ -241,7 +239,7 @@ namespace AsyncDataLoading {
             GridView.AllowEditing = isEn ? AllowEditing : false;
             GridView.AllowSorting = isEn ? AllowSorting : false;
             GridView.AllowColumnFiltering = isEn ? AllowColumnFiltering : false;
-            GridView.AllowFilterEditor = isEn ? AllowFilterEditor : false;
+            GridView.AllowFilterEditor = isEn ? AllowFilterEditor : DefaultBoolean.False;
             GridView.ShowTotalSummary = isEn ? ShowTotalSummary : false;
             GridView.ShowFilterPanelMode = isEn ? ShowFilterPanelMode : ShowFilterPanelMode.Never;
             if(tableView != null) {

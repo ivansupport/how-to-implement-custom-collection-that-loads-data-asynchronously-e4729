@@ -58,7 +58,7 @@ namespace AsyncDataLoading {
             //IsSettingsEnabled = value;
         }
         void ThemeButtonClick(object sender, RoutedEventArgs e) {
-            ThemeManager.ApplicationThemeName = ((Button)sender).Content.ToString();
+            ApplicationThemeHelper.ApplicationThemeName = ((Button)sender).Content.ToString();
         }
         void ApplySettingsButtonClick(object sender, RoutedEventArgs e) {
             AsynchronousCollectionSettings sett;
