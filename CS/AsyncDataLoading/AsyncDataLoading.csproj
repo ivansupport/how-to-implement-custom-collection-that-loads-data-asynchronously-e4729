@@ -34,16 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v18.1" />
-    <Reference Include="DevExpress.Mvvm.v18.1, Version=18.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\work\2018.1\Bin\Framework4\DevExpress.Mvvm.v18.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Xpf.Core.v18.1" />
-    <Reference Include="DevExpress.Xpf.Printing.v18.1" />
-    <Reference Include="DevExpress.Xpf.Grid.v18.1" />
-    <Reference Include="DevExpress.Xpf.Grid.v18.1.Core" />
-    <Reference Include="DevExpress.Xpf.LayoutControl.v18.1" />
+    <Reference Include="DevExpress.Data.v18.1"/>
+    <Reference Include="DevExpress.Mvvm.v18.1"/>
+    <Reference Include="DevExpress.Printing.v18.1.Core"/>
+    <Reference Include="DevExpress.Xpf.Core.v18.1"/>
+    <Reference Include="DevExpress.Xpf.Printing.v18.1"/>
+    <Reference Include="DevExpress.Xpf.Grid.v18.1"/>
+    <Reference Include="DevExpress.Xpf.Grid.v18.1.Core"/>
+    <Reference Include="DevExpress.Xpf.LayoutControl.v18.1"/>
+    <Reference Include="DevExpress.Xpf.Themes.Office2016White.v18.1"/>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
