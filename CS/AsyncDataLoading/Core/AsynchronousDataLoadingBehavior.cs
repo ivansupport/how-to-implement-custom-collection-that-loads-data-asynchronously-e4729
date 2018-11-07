@@ -29,7 +29,7 @@ namespace AsyncDataLoading {
             new PropertyMetadata(true, (d, e) => ((AsynchronousDataLoadingBehavior)d).OnAllowColumnFilteringChanged()));
         public static readonly DependencyProperty AllowFilterEditorProperty =
             DependencyProperty.Register("AllowFilterEditor", typeof(DefaultBoolean), typeof(AsynchronousDataLoadingBehavior),
-            new PropertyMetadata(true, (d, e) => ((AsynchronousDataLoadingBehavior)d).OnAllowFilterEditorChanged()));
+            new PropertyMetadata(DefaultBoolean.True, (d, e) => ((AsynchronousDataLoadingBehavior)d).OnAllowFilterEditorChanged()));
         public static readonly DependencyProperty ShowTotalSummaryProperty =
             DependencyProperty.Register("ShowTotalSummary", typeof(bool), typeof(AsynchronousDataLoadingBehavior),
             new PropertyMetadata(false, (d, e) => ((AsynchronousDataLoadingBehavior)d).OnShowTotalSummaryChanged()));
