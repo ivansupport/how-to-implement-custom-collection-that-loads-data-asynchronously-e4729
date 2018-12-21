@@ -16,7 +16,7 @@
     <dxlc:LayoutControl>
         <dxlc:LayoutGroup Orientation="Horizontal">
             <dxlc:LayoutGroup Header="DXGrid" View="GroupBox">
-                <dxg:GridControl x:Name="grid">
+                <dxg:GridControl x:Name="grid" ItemsSourceChanged="grid_ItemsSourceChanged">
                     <i:Interaction.Behaviors>
                         <dxgext:AsynchronousDataLoadingBehavior x:Name="asynchronousDataLoadingBehavior" AllowEditing="False"
                             DataSourceManager="{Binding ElementName=root, Path=DataSourceManager}" />
